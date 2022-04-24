@@ -344,7 +344,7 @@ def prompt_n(msg, inputs):
 
 class TreeWidgetItem(QtWidgets.QTreeWidgetItem):
 
-    TYPE = QtGui.QStandardItem.UserType + 101
+    TYPE = QtGui.QStandardItem.UserType.value + 101
 
     def __init__(self, path, icon, deleted):
         QtWidgets.QTreeWidgetItem.__init__(self)
